@@ -1,0 +1,587 @@
+/* 
+===== Index WebPang =====
+
+    1- Effects
+    2- General Css
+    3- Sections web
+       3.0- header section
+       3.1- Home Section 
+       3.2- Services Section 
+       3.3- Protfolio Section
+       3.4- About Section
+       3.5- team Section
+       3.6- Logos Section
+       3.7- Contact us  Section
+       3.8- Footer Section
+       
+*/
+
+/* 1- Effects */
+/*
+    - Opacity hover
+    - Section Header
+    - Section Padding
+*/
+
+/* //////////////////////////////// */
+/* 1- Effects */
+.effect-s{
+    position: relative;
+}
+.effect-s::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 98.5%;
+    background-color: #fed136;
+    top: 0;
+    left: 0;
+    z-index: 19;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .5s;
+}
+.effect-s:hover::after{
+    visibility: visible;
+    opacity: .7;
+}
+/* //////////////////////////////// */
+/* 2- General Css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.clear{
+    clear: both;
+}
+ul {
+    list-style: none;
+}
+.btn{
+    color: #fff;
+    background-color: #fed136;
+    width: 200px;
+    height: 60px;
+    border: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: "Helvetica Neue";
+    border-radius: 4px;
+    transition: background-color .6s;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #e6b301;
+}
+.pd-y{
+    padding-top: 96px;
+    padding-bottom: 64px;
+}
+.header-sec{
+    
+    margin: auto;
+    text-align: center;
+}
+.header-sec-title{
+    font-size: 45px;
+    text-transform: uppercase;
+    color: #333;
+}
+.header-sec-title::selection{
+    background-color: #fed136;
+    color: #333;
+}
+.header-sec-parag{
+    font-family: "Noto Color Emoji";
+    font-style: italic;
+    font-size: 15px;
+    padding-top: 10px ;
+    color: #6c757d;
+}
+.header-sec-parag::selection{
+    background-color: #fed136;
+    color: #333;
+}
+.mg{
+    margin: 0 5%;
+}
+/* //////////////////////////////// */
+/* 3.0- header section */
+header .header{
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+.header-item{
+    overflow: hidden;
+    padding-top: 30px;
+}
+.header .logo{
+    float: left;
+}
+.header .logo img{
+    width: 150px;
+    padding-top: 20px;
+}
+.header .list{
+    float: right;
+}
+.header .list li{
+    display: inline-block;
+    padding: 20px 10px;
+}
+.header .list li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.header .list li a::selection{
+    background-color: #fed136;
+}
+.header .list li a:hover{
+    color: #fed136;
+}
+/* //////////////////////////////// */
+/* 3.1- Home Section  */
+section .home{
+    background-image: url("https://b.top4top.io/p_17366exf91.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position:center ;
+    position: relative;
+}
+.home-content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.home-content .sub-title{
+    color: #fff;
+    font-family: "Noto Color Emoji";
+    font-style: italic;
+    font-weight: 400;
+    font-size: 38px;
+    text-transform: capitalize;
+    margin-bottom: 10px;   
+}
+.home-content .sub-title::selection{
+    background-color: #fed136;
+}
+.home-content .title-home{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 60px;
+    width: 1000px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.home-content .title-home::selection{
+    background-color: #fed136;
+}
+/* //////////////////////////////// */
+/* 3.2- Services Section */
+
+.service-content{
+    overflow: hidden;
+}
+.service-item{
+    width: 30%;
+    float: left;
+    text-align: center;
+    padding-top: 30px;
+}
+.service-item .fas{
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 40px;
+    border-radius: 50%;
+    margin: auto;
+    background-color: #fed136;
+    color: #fff;
+}
+.service-item-title{
+    padding: 15px 0;
+    text-transform: capitalize;
+    color: #333;
+}
+.service-item-title::selection{
+    background-color: #fed136;
+}
+.service-item-parag{
+    color: #6c757d;
+    font-family: "Noto Color Emoji";
+    font-size: 14px;
+    line-height: 1.5;
+}
+.service-item-parag::selection{
+    background-color: #fed136;
+}
+/* //////////////////////////////// */
+/* 3.3- Protfolio Section */
+.protfolio{
+    background-color: #f8f9fa;
+}
+.protfolio-content{
+    overflow: hidden;
+    margin-top: 50px;
+}
+.protfolio-item{
+    width: 30%;
+    float: left;
+    background-color: #fff;
+    position: relative;
+    margin-bottom: 40px;
+}
+.protfolio-item img{
+    width: 100%;
+    position: relative;
+}
+
+.portfolio-layer{
+    cursor: pointer;
+}
+.portfolio-layer i{
+    position: absolute;
+    z-index: 20;
+    font-size: 70px;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity .5s;
+    visibility: hidden;
+    opacity: 0;
+}
+.portfolio-layer:hover > i{
+    visibility: visible;
+    opacity: 1;
+}
+.portfolio-info{
+   text-align: center;
+}
+
+.protfolio-title{
+    color: #333333;
+    font-size: 25px;
+    text-transform: capitalize;
+    padding: 5px 0;
+}
+.protfolio-title::selection{
+    background-color: #fed136;
+}
+.protfolio-subtitle{
+    font-size: 17px;
+    color: #6c757d;
+    font-family: "Noto Color Emoji";
+    font-style: italic;
+    padding-bottom: 10px;
+    display: block;
+}
+.protfolio-subtitle::selection{
+    background-color: #fed136;
+}
+/* //////////////////////////////// */
+/*  3.4- About Section */
+.about-content{
+    margin: 50px auto;  
+    position: relative;
+}
+.about-content .line{
+    position: absolute;
+    width: 5px;
+    background-color: #e9ecef;
+    height: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: -1;
+}
+.about-item{
+    text-align: center;
+    position: relative;  
+    padding-bottom: 214px;
+}
+.about-info{
+    position: absolute;
+    width: 25%;
+    top: 10px;
+    left: 160px;
+    float: left;
+    text-align: right;
+}
+.about-item .about-info-rt{
+    position: absolute;
+    width: 25%;
+    top: 10px;
+    right: 160px;
+    float: left;
+    text-align: left;
+}
+.about-title{
+    color: #333;
+    text-transform: capitalize;
+}
+.about-title::selection{
+    background-color: #fed136;
+}
+.about-pardg{
+    font-size: 18px;
+    font-family: "Noto Color Emoji";
+    display: block;
+    padding-top: 10px;
+    color: #6c757d;
+}
+.about-pardg::selection{
+    background-color: #fed136;
+}
+.about-item img{
+    width: 150px;
+    border-radius: 50%;
+    border: 7px solid #e9ecef ;
+    margin: auto;
+    text-align: center;
+}
+
+.about-info-rt .about-title::selection{
+    background-color: #fed136;
+}
+.about-item-end{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+.about-item-end .last-about{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #e6b301;
+    border: 7px solid #e9ecef ;
+    margin: auto;
+    text-align: center;
+}
+.about-item-end{
+    text-align: center;
+    position: relative;
+}
+.about-item-end-title{
+    position: absolute;
+    font-size: 20px;
+    width: 80px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-transform: capitalize;
+    color: #f8f9fa;
+}
+.about-item-end-title::selection{
+    background-color: #fed136;
+}
+/* //////////////////////////////// */
+/* 3.5- team Section */
+.team{
+    background-color: #f8f9fa;
+}
+.team-content{
+    overflow: hidden;
+}
+.team-itme{
+    width: 30%;
+    text-align: center;
+    float: left;
+    margin-top: 60px;
+}
+.team-itme img{
+    width: 200px;
+    border-radius: 50%;
+    border: 9px solid #e9ecef;
+}
+.team-itme .team-name{
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    color: #333;
+}
+.team-itme .team-name::selection{
+    background-color: #fed136;
+}
+.team-itme .team-job{
+    color: #6c757d;
+    text-transform: capitalize;
+    font-family: "Noto Color Emoji";
+    font-size: 20px;
+    display: block;
+    margin-bottom: 5px ;
+}
+.team-itme .team-job::selection{
+    background-color: #fed136;
+}
+.icon-socila-team{
+    margin-top: 15px;
+    cursor: pointer;
+}
+.icon-socila-team i{
+    font-size: 18px;
+    margin: 0 5px;
+    background-color: #343a40;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    transition: background-color .5s;
+}
+.icon-socila-team i:hover{
+    background-color: #212529;
+}
+.parag{
+    margin-top: 30px;
+}
+.team-parag{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    display: block;
+    padding: 30px 0;
+    font-size: 20px;
+    font-family: "Noto Color Emoji";
+    color: #6c757d;
+}
+.team-parag::selection{
+    background-color: #fed136;
+}
+/* //////////////////////////////// */
+/* 3.6- Logos Section */
+.header-content{
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.header-content-title{
+    font-size: 45px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.header-content-title::selection{
+    background-color: #fed136;
+}
+.header-content-parag{
+    font-family: "Noto Color Emoji";
+    font-style: italic;
+    font-size: 15px;
+    padding-top: 10px ;
+    color: #6c757d;
+}
+.header-content-parag::selection{
+    background-color: #fed136;
+    color: #6c757d;
+}
+.logos-item{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.contact{
+    background-color: #212529;
+    background-image: url(https://j.top4top.io/p_1739f9x3l1.png);
+    height: 100vh;
+}
+/* //////////////////////////////// */
+/* 3.7- Contact Section */
+.contact-content{
+    overflow: hidden;
+    text-align: center;
+    margin-top: 50px;
+}
+.contact-info {
+    width: 50%;
+    float: left;
+}
+.contact-info .in-contact{
+    display: block;
+    width: 90%;
+    height: 70px;
+    border: none;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.contact-content .send{
+    width: 30%;
+    height: 100%;
+    float: right;
+    
+}
+.contact-content .send textarea{
+    width: 580px;
+    height: 240px;
+    padding: 10px;
+    border-radius: 5px;
+    float: right;
+}
+.contact-content button.btn{
+    width: 200px;
+    background-color: #e6b301;
+    margin-top: 50px;
+    
+} 
+/* //////////////////////////////// */
+/* 3.8- Footer Section */
+.footer-content{
+   overflow: hidden;
+}
+.footer-item{
+    width: 30%;
+    float: left;
+}
+.footer-content .d2{
+    text-align: center;
+}
+.footer-item .footer-title{
+    font-size: 17px;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 300;
+    color: #6c757d;
+}
+.footer-item .footer-title::selection{
+    background-color: #fed136;
+}
+.footer-item > a i{
+    font-size: 20px;
+    background-color: #343a40;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 52px;
+    margin: auto;
+    padding: 0 17px;
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: background-color .5s;
+}
+.footer-item > a i:hover{
+    background-color: #212529;
+}
+.footer-item ul{
+    text-align: right;
+}
+.footer-item ul li{
+    display: inline-block;
+}
+.footer-item ul li a{
+    color: #e6b301;
+    display: block;
+    margin: 0 5px;
+}
